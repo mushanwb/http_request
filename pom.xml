@@ -23,5 +23,12 @@
             <version>1.13.1</version>
         </dependency>
 
+        <!-- 将 InputStream 转化为 string 的包 -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+
     </dependencies>
 </project>
