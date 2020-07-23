@@ -16,6 +16,13 @@
             <version>4.5.12</version>
         </dependency>
 
+        <!-- 发送 http 请求包(另外一个不同的包，可以看一下跟上面包的差异) -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+
         <!-- html 解析包 -->
         <dependency>
             <groupId>org.jsoup</groupId>
