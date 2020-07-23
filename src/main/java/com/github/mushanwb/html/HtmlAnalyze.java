@@ -16,18 +16,18 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HtmlAnalytical {
+public class HtmlAnalyze {
     /*
      * 需求简介:
      *
      * 1、随便找一个 github 仓库项目的 issues url，例如：https://github.com/mushanwb/casual_write/issues
      * 2、抓取 issues 网页中的 Open 列表
-     * 3、需要的数据有 issues 中的 title ，number，author
+     * 3、需要的数据有 issues 中的 title ，number，author，url
      *
      */
 
     // 创建 issues 的内部静态类
-    static class GitHubIssues {
+    public static class GitHubIssues {
         // Issues 的标号
         int id;
         // Issues 的标题
@@ -53,7 +53,7 @@ public class HtmlAnalytical {
             return url;
         }
 
-        GitHubIssues(int id,String title, String author, String url) {
+        public GitHubIssues(int id, String title, String author, String url) {
             this.id = id;
             this.title = title;
             this.author = author;

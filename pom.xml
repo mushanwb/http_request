@@ -30,5 +30,12 @@
             <version>2.5</version>
         </dependency>
 
+        <!-- json 序列化和反序列的包 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.70</version>
+        </dependency>
+
     </dependencies>
 </project>
