@@ -11,6 +11,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -35,12 +36,17 @@ public class JsonAnalyze {
 
         List<HtmlAnalyze.GitHubIssues> lists = getFirstPageOfIssues(githubIssuesApi);
 
+        String dir = "D:\\wb\\my\\lite_spider\\src\\main\\resources\\1.csv";
+        //创建文件
+        FileWriter writer = new FileWriter(dir);
+
         for (HtmlAnalyze.GitHubIssues list : lists) {
-            System.out.println(list.getId());
-            System.out.println(list.getAuthor());
-            System.out.println(list.getTitle());
-            System.out.println(list.getUrl());
+            String writeString = list.getId() + "," + list.getAuthor() + "," + list.getTitle() + "," + list.getUrl();
+            //写入文件内容
+            writer.write(writeString + System.lineSeparator());
         }
+        writer.close();
+//
     }
 
     public static List<HtmlAnalyze.GitHubIssues> getFirstPageOfIssues(String url) throws IOException {
