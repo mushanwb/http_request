@@ -9,6 +9,8 @@ java 简化版爬虫 笔记 (代码语法样本)
 
 - get or post 请求添加 header or body and cookie
 
+- IO 操作，将爬取的数据写入文件中
+
 - 未完待续.........
 
 java 初学者, 技术有限, 仅供为自己的笔记参考........
