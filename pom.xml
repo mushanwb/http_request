@@ -13,7 +13,7 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.12</version>
+            <version>4.5.13</version>
         </dependency>
 
         <!-- 发送 http 请求包(另外一个不同的包，可以看一下跟上面包的差异) -->
